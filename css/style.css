@@ -1,0 +1,625 @@
+@import 'utilities.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiase;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: rgb(24, 20, 20);
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 70% 87% , 0 100%);
+}
+
+.contaner{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo img{
+    margin-top: 15px;
+        width: 80px;
+        height: 80px;
+    
+}
+.contaner nav .left a{
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.contaner nav .left a:hover{
+    color: aqua;
+}
+
+
+.contaner nav .logo{
+    margin-right: 3rem;
+}
+
+.btn-primary{
+    background-color: aqua;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: aqua;
+    color:aqua;
+}
+
+
+/* hero */
+
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+
+
+.hero .right{
+    color: white;
+}
+
+.hero .right h6{
+    color: aqua;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: aqua;
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+/* about */
+
+section{
+    padding: 6rem 0;
+}
+
+.about-img{
+    width: 300px;
+    height: 400px;
+    margin-left: 200px;
+}   
+
+.about-text{
+    margin-left: 13rem   ;
+}
+
+section h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section h1 span{
+    color: aqua;
+}
+
+section h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section pre{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: lightslategray;
+    line-height: 1.9;
+}
+
+.icons{
+    margin-top: 2rem;
+    margin-left: 8px;
+}
+
+.icons i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons i:hover{
+    color: aqua;
+}
+
+/* our services */
+
+.services{
+    background-color: aliceblue ;
+}
+.services-heading{
+    color: aqua;
+    line-height: 0.5;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-heading span{
+    color: black;
+}
+
+.services-heading + p{
+    color: lightslategray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 6rem;
+}
+
+.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: -2rem;
+    grid-row-gap: 6rem;
+    
+}
+
+.services .card-wrapper .card{
+    padding: 2rem 3rem;
+    background-color: white;
+    width: 350px;
+    margin-left: 40px;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+
+.services .card-wrapper .card i{
+    color: dimgray;
+    font-size: 3.5rem;
+    position: absolute;
+    top: -2.3rem;
+    left: 40%;
+}
+
+
+.services .card-wrapper .card h1{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.services .card-wrapper .card p{
+    font-family: 'Times New Roman', Times, serif;
+    color: lightslategray;
+    line-height: 1.6rem;
+}
+
+.services .card-wrapper .card:hover {
+    background-color: black;
+}
+
+.services .card-wrapper .card:hover h1, .services .card-wrapper .card:hover p{
+    color: white;
+} 
+
+/* freelaner */
+
+
+.freelancing{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../imsges/rahul-mishra-yxSidVe5yVs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-bottom: 14rem;
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 67% 80% , 0 100%);
+}
+
+.freelancing h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.freelancing p{
+    color: lightslategray;
+    margin-bottom: 2rem;
+}
+
+/* reviews */
+
+.reviews .container {
+    text-align: center;
+}
+
+.reviews .container h1{
+    color: aqua;
+}
+
+.reviews .container h1 span{
+    color: black;
+}
+
+.reviews .container p{
+    color: lightslategray;
+}
+
+/* sliders */
+
+.reviews .slider .slide-one img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.reviews .slider .slide-one {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+.reviews .slider .slide-one p{
+    color: lightslategray;
+    margin-bottom: 1rem;
+    padding: 0px 150px;
+}
+
+.reviews .slider .slide-one p span{
+    font-size: 0.8rem;
+}
+
+.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.reviews .slider-dots .dots button{
+    font-size: 0;
+    width: 10px;
+    height: 6px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.reviews .dots li.slick-active button{
+   background-color: aqua;
+   width: 20px;
+
+}
+
+/* our work  */
+
+.our-work {
+    text-align: center;
+    background-color:rgb(228, 243, 248);
+    
+}
+
+.our-work h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.our-work h1 span{
+    color: aqua;
+}
+
+.our-work p{
+    color: lightslategray;
+    margin-bottom: 3rem;
+}
+
+.our-work .card-wrapper .card img{
+    width: 350px;
+    height: 200px;
+}
+
+section.our-work .card-wrapper{
+      display: grid;    
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 2rem;
+      padding: 0 4rem;
+    
+}
+
+section.our-work .card-wrapper .card{
+    height: 200px;
+    width: 350px;
+    position: relative;
+}
+
+
+section.our-work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61,207,211,0.6);
+    flex-direction: column;
+    color: aqua ;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 0,3 ease;
+}
+
+section.our-work .card-wrapper .card .overlay:hover{
+    opacity: 1;
+}
+
+
+section.our-work .card-wrapper .card .overlay a{
+    font-weight: 400;
+    margin-top: 0.6rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* our blog  */
+
+.blog{
+    background-color: black ;
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 63% 90% , 0 100%);
+    padding-bottom: 12rem;
+}
+
+.blog .container{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.blog .container span{
+    font-weight: 800;
+}
+
+.blog .container h1{
+    font-weight: 800;
+    color: white;
+}
+
+
+.blog .container p{
+    color: lightslategray;
+    font-size: 0.9rem;
+}
+
+.blog .card-wrapper .card .img-wrapper img{
+    width: 363px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.blog .card-wrapper{
+    padding: 0 80px;
+    grid-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.blog .card-wrapper .card{
+    background-color: white;
+}
+
+.blog .card-wrapper .card .card-content{
+    padding: 1.5rem  2rem ;
+}
+
+.blog .card-wrapper .card .card-content h1{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}   
+
+.blog .card-wrapper .card .card-content a{
+    text-decoration: none;
+}
+
+.blog .card-wrapper .card .card-content h1:hover{
+    color: aqua ;
+}
+
+
+.blog .card-wrapper .card .card-content span{
+    color: lightslategray;
+    font-size: 0.8rem;
+}
+
+.blog .card-wrapper .card .card-content p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog .card-wrapper .card .card-content .read-more{
+    font-size: 0.8rem;
+    color: black ;
+}
+.blog .card-wrapper .card .card-content .read-more:hover{
+    color: aqua ;
+}
+
+
+
+/* contect us  */
+
+
+.contect .container{
+    text-align: center;
+}
+
+
+.contect .container h1 span{
+    font-weight: 800;
+    color: black;
+}
+
+.contect .container h1{
+    font-weight: 800;
+    color: aqua;
+}
+
+
+.contect .container p{
+    color: lightslategray;
+    font-size: 0.9rem;
+    margin-bottom: 5rem;
+}
+
+.contect .card-wrapper .card i{
+
+    font-size: 80px;
+    margin-bottom: 3rem;
+}
+
+.contect .card-wrapper{
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.contect .card-wrapper .card{
+    text-align: center;
+}
+
+.contect .card-wrapper .card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+
+.contect .card-wrapper .card h6
+{
+    font-size: 1rem;
+    color: lightslategray;
+    font-weight: 400;
+}
+
+/* form  */
+
+form{
+    padding: 0 150px;
+    margin-top: 5rem;
+}
+
+section.contect .input-wrap{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contect .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contect input{
+    font-size: 0.9rem;
+    border: 1px solid lightslategray;
+    padding: 0.5rem;
+}
+
+section.contect .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+section.contect .input-wrap-2 textarea{
+    font-size: 0.9rem;
+    height: 7rem;
+    padding: 0.5rem ;
+    border: 1px solid lightslategray;
+}
+
+section.contect .input-wrap-2 textarea:focus ,section.contect input:focus{
+    outline: none;
+}
+
+section.contect .btn-contect{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* footer  */
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer img{
+    margin-top: -3rem;
+    width: 350px;
+    height: 150px;
+}
+
+footer .footer-socials i{
+    color: white;
+    font-size: 1.2rem ;
+    margin-right: 1rem  ;
+}
+
+footer .footer-socials{
+    margin-left: 1.5rem;
+}
+
+
+footer .copyright{
+    margin-top: 3rem;
+    color: lightslategray;
+}
+
+
+
+
+
+
+
+
+
+
+
